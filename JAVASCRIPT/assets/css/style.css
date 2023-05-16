@@ -1,0 +1,403 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow-x: hidden;
+}
+
+
+/* ======================== Header ========================== */
+
+header {
+  background-color: #ffffff;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header div {
+  width: vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header div a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+header div a h1 {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+@media only screen and (min-width: 300px) {
+  header div a h1 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+
+@media only screen and (min-width: 800px) {
+  header div a h1 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  header div a h1 {
+    font-size: 100px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+nav {
+  height: 30vh;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul > li {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 50px;
+}
+
+
+/* ======================= Hover effects ================================*/
+
+.cool-link {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 20px;
+  padding: 1rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.5s cubic-bezier(0.15, 0.79, 0.68, 1.03);
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.8);
+  transition: width 0.3s;
+}
+.cool-link:hover:after {
+  width: 100%;
+  transition: 0.3s;
+}
+
+
+/* ================= Section1 =============================================== */
+
+#section1 {
+  background: lightcoral;
+}
+
+#section1 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.carousel-container {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  border: 5px solid #333;
+  overflow: hidden;
+  position: relative;
+}
+
+@media only screen and (max-width: 800px) {
+  .carousel-container {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .carousel-container {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
+
+#backBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 30px;
+  color: hotpink;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 30px;
+  color: hotpink;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+
+/* ================================= Section2 =================================== */
+
+#section2 {
+  background: lightsalmon;
+}
+
+#section2 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-gallery {
+  max-width: 500px;
+  border: #333 solid 5px;
+  background-color: #333;
+  margin: 20px;
+}
+
+
+.gallery-img img,
+.gallery-imgs img {
+  width: 100%;
+}
+
+.gallery-imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+/* ======================= Section3 ========================================= */
+
+#section3 {
+  background: lightskyblue;
+}
+
+#section3 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#section3 h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper-contact {
+  background-color: #fff;
+  font-family: "Open Sans";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.container-contact {
+  background-color: white;
+  border: 8px solid black;
+  overflow: hidden;
+  max-width: 400px;
+  margin: 20px;
+}
+
+.header-contact {
+  background-color: white;
+  padding: 20px 40px;
+}
+
+.header-contact h2 {
+  margin: 0;
+  color: black;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 50px;
+}
+
+@media only screen and (max-width: 650px) {
+  .header-contact h2 {
+    font-size: 30px;
+  }
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.form-control input {
+  border: 4px solid black;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control i {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  visibility: hidden;
+  bottom: 0;
+  left: 0;
+}
+
+.form button {
+  background-color: black;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control.success input {
+  border-color: #32d932;
+}
+
+.form-control.error input {
+  border-color: hotpink;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #32d932;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: hotpink;
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: hotpink;
+}
+
+
+/* ====================================Back to Top ================================ */
+
+.btn-top {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 10px;
+  right: 10px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 20px;
+}

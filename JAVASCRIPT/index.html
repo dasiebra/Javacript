@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ekkehard Siebrasse</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="assets/css/fontawsome.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/js/validation.js" defer></script>
+    <script src="assets/js/slider.js" defer></script>
+    <script src="assets/js/gallery.js" defer></script>
+    <script src="assets/js/smoothscroll.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header-main">
+      <div class="box-center">
+        <a href="index.html">
+          <h1>Ekkehard Siebrasse</h1>
+        </a>
+      </div>
+      <nav id="top">
+        <ul>
+          <li><a href="#section1" class="cool-link">Slider</a></li>
+          <li><a href="#section2" class="cool-link">Gallerie</a></li>
+          <li><a href="#section3" class="cool-link">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="section1">
+        <div class="carousel-container">
+          <i class="fas fa-arrow-left" id="backBtn"></i>
+          <i class="fas fa-arrow-right" id="nextBtn"></i>
+          <div class="carousel-slide">
+            <img src="assets/img/pic9.jpg" id="lastImg" alt="" />
+            <img src="assets/img/pic1.jpg" alt="" />
+            <img src="assets/img/pic2.jpg" alt="" />
+            <img src="assets/img/pic3.jpg" alt="" />
+            <img src="assets/img/pic4.jpg" alt="" />
+            <img src="assets/img/pic5.jpg" alt="" />
+            <img src="assets/img/pic6.jpg" alt="" />
+            <img src="assets/img/pic7.jpg" alt="" />
+            <img src="assets/img/pic8.jpg" alt="" />
+            <img src="assets/img/pic9.jpg" alt="" />
+            <img src="assets/img/pic1.jpg" id="firstImg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="section2">
+        <div class="wrapper-gallery">
+          <div class="gallery-img">
+            <img src="assets/img/pic1.jpg" id="current" />
+          </div>
+          <div class="gallery-imgs">
+            <img src="assets/img/pic1.jpg" />
+            <img src="assets/img/pic2.jpg" />
+            <img src="assets/img/pic3.jpg" />
+            <img src="assets/img/pic4.jpg" />
+            <img src="assets/img/pic5.jpg" />
+            <img src="assets/img/pic6.jpg" />
+            <img src="assets/img/pic7.jpg" />
+            <img src="assets/img/pic8.jpg" />
+          </div>
+        </div>
+      </section>
+      <section id="section3">
+        <div class="wrapper-contact">
+          <div class="container-contact">
+            <div class="header-contact">
+              <h2>Kontakt</h2>
+            </div>
+            <form class="form" id="form">
+              <div class="form-control">
+                <label for="firstname">Vorname</label>
+                <input type="text" placeholder="Vorname" id="firstname" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="lastname">Nachname</label>
+                <input type="text" placeholder="Nachname" id="lastname" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" placeholder="email@email.de" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="textmessage">Nachricht</label>
+                <input
+                  type="text"
+                  placeholder="Schreibe eine Nachricht..."
+                  id="textmessage"
+                />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+              </div>
+              <button>Absenden</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <a href="#top" class="btn-top">TOP</a>
+    </main>
+    <footer></footer>
+  </body>
+</html>
